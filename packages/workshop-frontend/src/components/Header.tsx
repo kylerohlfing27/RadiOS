@@ -47,7 +47,7 @@ export default function Header() {
         <div className="flex items-center gap-6">
           <Link to="/" className="flex items-center gap-2">
             <SiteLogo size={22} className="shrink-0">
-              <Hexagon size={22} className="text-kumo-brand" weight="bold" />
+              <Hexagon size={22} className="text-accent-200" weight="bold" />
             </SiteLogo>
             <span className="text-base font-semibold tracking-tight text-kumo-default">
               {siteName}

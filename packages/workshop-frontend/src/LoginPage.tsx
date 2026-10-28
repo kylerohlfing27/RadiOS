@@ -103,7 +103,7 @@ export default function LoginPage({ rpcStub, onLoginSuccess }: LoginPageProps) {
         {/* Logo */}
         <div className="flex flex-col items-center mb-8">
           <SiteLogo size={40} className="mb-3">
-            <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-kumo-brand mb-3">
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-accent-200 mb-3">
               <Hexagon size={20} className="text-white" weight="bold" />
             </div>
           </SiteLogo>

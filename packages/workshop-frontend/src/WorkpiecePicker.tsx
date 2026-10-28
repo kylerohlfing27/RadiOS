@@ -153,7 +153,7 @@ export default function WorkpiecePicker({
                     <span className="min-w-0 flex-1 truncate">{gadget.title}</span>
                   )}
                   {isAgentEditing && (
-                    <span className={`${expanded ? '' : 'absolute right-1 top-1'} h-1.5 w-1.5 flex-shrink-0 animate-pulse rounded-full bg-kumo-brand`} />
+                    <span className={`${expanded ? '' : 'absolute right-1 top-1'} h-1.5 w-1.5 flex-shrink-0 animate-pulse rounded-full bg-accent-200`} />
                   )}
                   {isPending && (
                     expanded ? (
@@ -232,7 +232,7 @@ export default function WorkpiecePicker({
                         <span className="min-w-0 flex-1 truncate">{worktree.title}</span>
                       )}
                       {isAgentEditing && (
-                        <span className={`${expanded ? '' : 'absolute right-1 top-1'} h-1.5 w-1.5 flex-shrink-0 animate-pulse rounded-full bg-kumo-brand`} />
+                        <span className={`${expanded ? '' : 'absolute right-1 top-1'} h-1.5 w-1.5 flex-shrink-0 animate-pulse rounded-full bg-accent-200`} />
                       )}
                     </button>
                   </Tooltip>
@@ -255,7 +255,7 @@ export default function WorkpiecePicker({
             {expanded ? (
               <CountBadge count={pendingActivityCount} />
             ) : pendingActivityCount > 0 && (
-              <span className="absolute right-1 top-1 h-1.5 w-1.5 rounded-full bg-kumo-brand" />
+              <span className="absolute right-1 top-1 h-1.5 w-1.5 rounded-full bg-accent-200" />
             )}
           </button>
         </Tooltip>

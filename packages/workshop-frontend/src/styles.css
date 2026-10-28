@@ -21,9 +21,10 @@
 
   /* ===== KUMO SEMANTIC COLOR OVERRIDES =====
      Near-neutral, barely-warm greys for every surface, border, and neutral text. RadiOS navy is
-     reserved for *intent only* (active item, links, primary action, focus) so it actually pops;
-     Radius orange is a secondary accent for decorative highlights and badges, never for text on
-     light surfaces (3.5:1 on white) and never for errors or destructive actions.
+     reserved for *intent only* (links, primary action, focus) so it actually pops. Radius orange
+     (--color-accent-200) carries the brand mark and active/highlight indicators: icons, bars,
+     borders, dots and tints. It is never text on light surfaces or behind white text (3.5:1 on
+     white, below AA for text), and never for errors or destructive actions.
      This is the single biggest lever between a "consumer/playground" feel and an enterprise one. */
 
   /* Background tokens — near-white neutrals with a faint warm undertone */
@@ -92,7 +93,7 @@
   --color-foreground-300: #1c1a18;
   --color-border-100: #e8e7e4;
   --color-border-100-50: #e8e7e480;
-  --color-selection-bg: #dce8f7;
+  --color-selection-bg: #fde4da;
   --color-selection-text: #053c7c;
   --color-shadow-accent-light: #7fa8e6;
   --color-shadow-accent-dark: #032a57;
@@ -205,7 +206,7 @@
   --color-foreground-300: oklch(0.66 0.02 285);
   --color-border-100: oklch(0.34 0.022 285);
   --color-border-100-50: oklch(0.34 0.022 285 / 0.5);
-  --color-selection-bg: color-mix(in srgb, var(--color-kumo-brand) 28%, transparent);
+  --color-selection-bg: color-mix(in srgb, var(--color-accent-200) 30%, transparent);
   --color-selection-text: oklch(0.97 0.006 285);
   --color-shadow-accent-light: #8ab4f055;
   --color-shadow-accent-dark: #00000080;
@@ -420,7 +421,7 @@ html {
 .themed-accent-glow {
   background: radial-gradient(
     circle,
-    color-mix(in srgb, var(--color-kumo-brand) 12%, transparent) 0%,
+    color-mix(in srgb, var(--color-accent-200) 14%, transparent) 0%,
     color-mix(in srgb, var(--color-kumo-tint) 38%, transparent) 38%,
     transparent 70%
   );
@@ -738,7 +739,7 @@ html {
 @media (hover: hover) and (pointer: fine) {
   .connectors-hero-flow-line {
     animation: connectors-hero-flow 700ms linear infinite;
-    stroke: color-mix(in srgb, var(--color-kumo-brand) 52%, currentColor);
+    stroke: color-mix(in srgb, var(--color-accent-200) 60%, currentColor);
   }
 }
 
@@ -778,18 +779,18 @@ html {
 /* Right panel tab active */
 .panel-tab-active {
   color: var(--color-kumo-brand);
-  border-color: var(--color-kumo-brand);
+  border-color: var(--color-accent-200);
 }
 
 .file-row-active {
-  box-shadow: inset 3px 0 0 var(--color-kumo-brand);
+  box-shadow: inset 3px 0 0 var(--color-accent-200);
 }
 
 @supports (color: color-mix(in srgb, black, white)) {
   .file-row-active {
     box-shadow:
-      inset 3px 0 0 var(--color-kumo-brand),
-      inset 0 0 0 1px color-mix(in srgb, var(--color-kumo-brand) 28%, transparent);
+      inset 3px 0 0 var(--color-accent-200),
+      inset 0 0 0 1px color-mix(in srgb, var(--color-accent-200) 28%, transparent);
   }
 }
 

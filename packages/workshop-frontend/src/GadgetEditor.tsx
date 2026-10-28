@@ -1566,7 +1566,7 @@ export default function GadgetEditor() {
             className="flex-shrink-0 hover:opacity-80 transition-opacity"
           >
             <SiteLogo size={22}>
-              <Hexagon size={22} className="text-kumo-brand" weight="bold" />
+              <Hexagon size={22} className="text-accent-200" weight="bold" />
             </SiteLogo>
           </Link>
 
