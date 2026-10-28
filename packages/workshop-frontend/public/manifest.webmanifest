@@ -1,7 +1,7 @@
 {
   "id": "/",
-  "name": "Cloudflare OS",
-  "short_name": "Cloudflare OS",
+  "name": "RadiOS",
+  "short_name": "RadiOS",
   "description": "Your workspaces, AI agents, and personal apps.",
   "start_url": "/",
   "scope": "/",
