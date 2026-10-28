@@ -18,7 +18,7 @@ export function ResolveButton({
   describedBy?: string
 }) {
   const toneClassName = variant === 'filled'
-    ? 'h-7 bg-kumo-brand px-3 text-white enabled:hover:opacity-90'
+    ? 'h-7 bg-accent-200 px-3 text-black enabled:hover:opacity-90'
     : tone === 'approve'
       ? 'h-6 px-2 text-kumo-default enabled:hover:bg-kumo-tint enabled:hover:text-kumo-default-hover'
       : 'h-6 px-2 text-kumo-inactive enabled:hover:bg-kumo-tint enabled:hover:text-kumo-danger'

@@ -95,9 +95,9 @@ export const PAGE_STYLE = `
     --subtle: oklch(52% 0.006 60);
     --brand: #053c7c;
     --danger: oklch(63.7% 0.237 25.331);
-    /* Kumo's primary button is "contrast": near-black in light mode, the accent in dark. */
-    --contrast: #14110f;
-    --on-contrast: #ffffff;
+    /* Primary buttons are Radius orange with black labels (white is below AA on this orange). */
+    --contrast: #f05221;
+    --on-contrast: #000000;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -109,7 +109,6 @@ export const PAGE_STYLE = `
       --subtle: oklch(0.66 0.02 285);
       --brand: #2b6cb8;
       --danger: oklch(70.4% 0.191 22.216);
-      --contrast: #2b6cb8;
     }
   }
 

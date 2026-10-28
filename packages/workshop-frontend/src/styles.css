@@ -21,10 +21,11 @@
 
   /* ===== KUMO SEMANTIC COLOR OVERRIDES =====
      Near-neutral, barely-warm greys for every surface, border, and neutral text. RadiOS navy is
-     reserved for *intent only* (links, primary action, focus) so it actually pops. Radius orange
-     (--color-accent-200) carries the brand mark and active/highlight indicators: icons, bars,
-     borders, dots and tints. It is never text on light surfaces or behind white text (3.5:1 on
-     white, below AA for text), and never for errors or destructive actions.
+     reserved for *intent only* (links, brand text, focus) so it actually pops. Radius orange
+     (--color-accent-200) carries the brand mark, primary action buttons (with black labels) and
+     active/highlight indicators: icons, bars, borders, dots and tints. It is never text on light
+     surfaces or behind white text (3.5:1 on white, below AA for text), and never for errors or
+     destructive actions.
      This is the single biggest lever between a "consumer/playground" feel and an enterprise one. */
 
   /* Background tokens — near-white neutrals with a faint warm undertone */
@@ -313,6 +314,18 @@ body {
 
 code {
   font-family: var(--font-mono);
+}
+
+/* Kumo's primary Button paints its gradient from --color-kumo-brand, referenced in each button's
+   inline style, and forces white text. Primary actions are Radius orange, where white text is only
+   3.5:1 (below AA), so primary buttons re-point the token to orange and take black text (5.9:1).
+   The rule sits in the utilities layer so its !important outranks Kumo's `!text-white` there. */
+@layer utilities {
+  button[data-kumo-component="Button"][style*="--color-kumo-brand"],
+  a[data-kumo-component="LinkButton"][style*="--color-kumo-brand"] {
+    --color-kumo-brand: var(--color-accent-200);
+    color: #000 !important;
+  }
 }
 
 /* Prompt input focus */

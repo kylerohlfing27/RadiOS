@@ -21,7 +21,7 @@ export const Route = createFileRoute('/providers')({ component: ProvidersPage })
 // ─── constants ────────────────────────────────────────────────────────────────
 
 const PRIMARY_BTN =
-  'press inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-1.5 rounded-lg bg-kumo-brand px-3.5 text-[13px] font-medium tracking-[-0.25px] text-white transition-colors hover:bg-kumo-brand-hover'
+  'press inline-flex h-9 shrink-0 cursor-pointer items-center justify-center gap-1.5 rounded-lg bg-accent-200 px-3.5 text-[13px] font-medium tracking-[-0.25px] text-black transition-colors hover:bg-accent-200/85'
 
 // ─── model row ─────────────────────────────────────────────────────────────────
 

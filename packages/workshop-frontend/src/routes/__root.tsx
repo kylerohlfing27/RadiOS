@@ -73,7 +73,7 @@ function RootComponent() {
         <p className="text-sm text-kumo-danger">Authentication error: {error}</p>
         <button
           onClick={() => window.location.reload()}
-          className="px-4 py-2 text-sm font-medium text-kumo-inverse bg-kumo-brand rounded-lg hover:bg-kumo-brand-hover transition-colors"
+          className="px-4 py-2 text-sm font-medium text-black bg-accent-200 rounded-lg hover:bg-accent-200/85 transition-colors"
         >
           Retry
         </button>
