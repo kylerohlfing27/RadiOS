@@ -1,4 +1,6 @@
-# Cloudflare OS: An AI productivity environment
+# RadiOS: An AI productivity environment
+
+> RadiOS is Radius Channels' build of [Cloudflare OS](https://github.com/cloudflare/cloudflare-os). The rest of this README describes the upstream project and still uses its name.
 
 Cloudflare OS is an "operating system" for AI productivity originally developed for use inside Cloudflare. A large portion of Cloudflare's workforce -- from engineering to sales and everything in between -- uses Cloudflare OS every day to help them do their jobs.
 

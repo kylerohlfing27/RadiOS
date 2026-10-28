@@ -10,7 +10,7 @@ const OWNER_KEY = "gadgets:notifications:browserPushOwner";
 export const browserPushSupport = (): "supported" | "unsupported" | "appleMobile" | "android" => {
   // The native apps deliver their own push.
   if (inNativeApp()) return "unsupported";
-  // The Cloudflare OS app pushes there, so a browser subscription would duplicate it. iPadOS
+  // The RadiOS app pushes there, so a browser subscription would duplicate it. iPadOS
   // Safari reports itself as a Mac with touch.
   if (/iPhone|iPad|iPod/.test(navigator.userAgent) ||
       (navigator.userAgent.includes("Macintosh") && navigator.maxTouchPoints > 1)) {
