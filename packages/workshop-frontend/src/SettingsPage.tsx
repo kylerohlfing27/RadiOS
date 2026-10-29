@@ -16,7 +16,7 @@ import { isImeComposing } from './keyboardEvent'
 // the gatekeepers toolbar, the command palette). Kept here so the profile page reads as part of the
 // system rather than a stack of default Kumo cards.
 const PRIMARY_BTN =
-  'press inline-flex h-9 cursor-pointer items-center justify-center gap-1.5 rounded-lg bg-kumo-brand px-3.5 text-[13px] font-medium tracking-[-0.25px] text-white transition-colors hover:bg-kumo-brand-hover disabled:cursor-not-allowed disabled:opacity-60'
+  'press inline-flex h-9 cursor-pointer items-center justify-center gap-1.5 rounded-lg bg-accent-200 px-3.5 text-[13px] font-medium tracking-[-0.25px] text-black transition-colors hover:bg-accent-200/85 disabled:cursor-not-allowed disabled:opacity-60'
 const ICON_BTN =
   'press grid h-8 w-8 shrink-0 cursor-pointer place-items-center rounded-lg text-kumo-inactive transition-colors hover:bg-kumo-tint hover:text-kumo-default'
 const INPUT =

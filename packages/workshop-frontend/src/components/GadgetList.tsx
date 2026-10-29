@@ -95,7 +95,7 @@ function AppRow({
       {/* Info */}
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2">
-          {gadget.pinned && <Star size={12} weight="fill" className="text-kumo-brand flex-shrink-0" />}
+          {gadget.pinned && <Star size={12} weight="fill" className="text-accent-200 flex-shrink-0" />}
           {isRenaming ? (
             <input
               ref={renameInputRef}

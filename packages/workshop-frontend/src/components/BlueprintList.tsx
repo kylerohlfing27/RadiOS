@@ -73,7 +73,7 @@ function BlueprintRow({
 
       <div className="min-w-0 flex-1">
         <div className="flex items-center gap-2">
-          {item.pinned && <Star size={12} weight="fill" className="flex-shrink-0 text-kumo-brand" />}
+          {item.pinned && <Star size={12} weight="fill" className="flex-shrink-0 text-accent-200" />}
           <h3 className="truncate text-sm font-medium text-kumo-default">
             {item.title || 'Untitled blueprint'}
           </h3>

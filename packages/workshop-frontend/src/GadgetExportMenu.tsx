@@ -137,7 +137,7 @@ export default function GadgetExportMenu({ gadget, gadgetTitle, chatId }: Props)
         </DropdownMenu>
         {exportingId !== null && (
           <span className="pointer-events-none absolute bottom-0 left-1 right-1 h-0.5 overflow-hidden rounded-full bg-kumo-fill">
-            <span className="absolute inset-y-0 w-1/3 bg-kumo-brand animate-[thinking_1.5s_ease-in-out_infinite]" />
+            <span className="absolute inset-y-0 w-1/3 bg-accent-200 animate-[thinking_1.5s_ease-in-out_infinite]" />
           </span>
         )}
       </span>

@@ -396,7 +396,7 @@ export default function OnboardingWizard({
           }`}
         >
           <SiteLogo size={22}>
-            <Hexagon size={22} className="text-kumo-brand" weight="bold" />
+            <Hexagon size={22} className="text-accent-200" weight="bold" />
           </SiteLogo>
           <span className="text-base font-semibold tracking-tight text-kumo-default">
             {siteName}
@@ -428,9 +428,9 @@ export default function OnboardingWizard({
               key={i}
               className={`h-1.5 rounded-full transition-all duration-400 ${
                 i === step
-                  ? 'w-8 bg-kumo-brand'
+                  ? 'w-8 bg-accent-200'
                   : i < step
-                    ? 'w-4 bg-kumo-brand/40'
+                    ? 'w-4 bg-accent-200/40'
                     : 'w-4 bg-kumo-line'
               }`}
             />
@@ -735,7 +735,7 @@ export default function OnboardingWizard({
                     flex items-center gap-2 px-5 py-2.5 text-sm font-medium rounded-lg
                     transition-all duration-150
                     ${canGoNext
-                      ? 'text-kumo-inverse bg-kumo-brand hover:bg-kumo-brand-hover'
+                      ? 'text-black bg-accent-200 hover:bg-accent-200/85'
                       : 'text-kumo-inactive bg-kumo-tint cursor-not-allowed'
                     }
                   `}
@@ -751,7 +751,7 @@ export default function OnboardingWizard({
                     flex items-center gap-2 px-5 py-2.5 text-sm font-medium rounded-lg
                     transition-all duration-150
                     ${!finishing
-                      ? 'text-kumo-inverse bg-kumo-brand hover:bg-kumo-brand-hover'
+                      ? 'text-black bg-accent-200 hover:bg-accent-200/85'
                       : 'text-kumo-inactive bg-kumo-tint cursor-not-allowed'
                     }
                   `}

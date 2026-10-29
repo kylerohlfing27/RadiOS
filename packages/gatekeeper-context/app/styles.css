@@ -457,3 +457,14 @@ html {
   background: var(--color-kumo-tint);
   font-weight: 600;
 }
+
+/* Primary buttons are Radius orange with black labels, as in the Workshop (see
+   workshop-frontend/src/styles.css): Kumo's primary Button reads --color-kumo-brand from its inline
+   style and forces white text, which is below AA on this orange. */
+@layer utilities {
+  button[data-kumo-component="Button"][style*="--color-kumo-brand"],
+  a[data-kumo-component="LinkButton"][style*="--color-kumo-brand"] {
+    --color-kumo-brand: var(--color-accent-200);
+    color: #000 !important;
+  }
+}

@@ -25,7 +25,7 @@ function WorkspacesPage() {
         {/* "Create" just routes to Home (the new-workspace launcher) for now. */}
         <Link
           to="/"
-          className="press inline-flex h-11 shrink-0 cursor-pointer items-center justify-center gap-1.5 rounded-lg bg-kumo-brand px-3.5 text-[14px] font-medium text-white transition-colors hover:bg-kumo-brand-hover sm:h-9 sm:text-[13px]"
+          className="press inline-flex h-11 shrink-0 cursor-pointer items-center justify-center gap-1.5 rounded-lg bg-accent-200 px-3.5 text-[14px] font-medium text-black transition-colors hover:bg-accent-200/85 sm:h-9 sm:text-[13px]"
         >
           <Plus size={14} weight="bold" />
           Create workspace

@@ -4960,7 +4960,7 @@ function ChatInterface({
                   type="button"
                   onClick={() => handleAcceptConnection(msg)}
                   disabled={isProc}
-                  className="cursor-pointer rounded-md bg-kumo-brand px-3 py-1 font-medium text-white transition-[opacity,transform] duration-150 ease-out hover:opacity-90 focus-visible:outline-none active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-40"
+                  className="cursor-pointer rounded-md bg-accent-200 px-3 py-1 font-medium text-black transition-[opacity,transform] duration-150 ease-out hover:opacity-90 focus-visible:outline-none active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-40"
                 >
                   Set up
                 </button>

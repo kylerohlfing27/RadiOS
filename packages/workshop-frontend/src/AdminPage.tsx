@@ -611,7 +611,7 @@ export default function AdminPage() {
           <div className="flex flex-wrap items-center gap-4">
             <div className="flex h-16 w-16 items-center justify-center rounded-xl border border-kumo-line bg-kumo-base p-2">
               <SiteLogo size={40} srcOverride={siteLogoUrl}>
-                <Hexagon size={32} weight="bold" className="text-kumo-brand" />
+                <Hexagon size={32} weight="bold" className="text-accent-200" />
               </SiteLogo>
             </div>
             <input

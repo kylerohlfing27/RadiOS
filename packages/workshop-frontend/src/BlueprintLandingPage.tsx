@@ -886,7 +886,7 @@ export default function BlueprintLandingPage({ rpcStub }: Props) {
                   type="button"
                   onClick={handleStartConfigure}
                   disabled={createDisabled}
-                  className="press inline-flex h-10 w-full cursor-pointer items-center justify-center rounded-lg bg-kumo-brand px-4 text-[14px] leading-5 font-semibold tracking-[-0.25px] text-white transition-colors duration-150 ease-out hover:bg-kumo-brand-hover disabled:cursor-not-allowed disabled:opacity-60"
+                  className="press inline-flex h-10 w-full cursor-pointer items-center justify-center rounded-lg bg-accent-200 px-4 text-[14px] leading-5 font-semibold tracking-[-0.25px] text-black transition-colors duration-150 ease-out hover:bg-accent-200/85 disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {creating ? 'Creating...' : primaryActionLabel}
                 </button>
