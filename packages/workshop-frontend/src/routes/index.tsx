@@ -198,6 +198,22 @@ export function HomePageContent({ prompt }: HomeSearch) {
       <div className="flex w-full max-w-2xl flex-col items-stretch gap-8">
         {/* Hero */}
         <header className="text-center">
+          {/* Radius Channels wordmark. The navy original disappears on the dark palette, so dark
+              mode swaps in a copy with white lettering and the same orange dot. */}
+          <img
+            src="/brand/radius-channels-logo.png"
+            alt="Radius Channels"
+            width={640}
+            height={285}
+            className="mx-auto mb-6 h-auto w-40 sm:w-48 dark:hidden"
+          />
+          <img
+            src="/brand/radius-channels-logo-dark.png"
+            alt="Radius Channels"
+            width={640}
+            height={285}
+            className="mx-auto mb-6 hidden h-auto w-40 sm:w-48 dark:block"
+          />
           <h1 className="text-3xl font-semibold tracking-tight leading-tight text-kumo-default sm:text-4xl">
             What are we working on?
           </h1>
